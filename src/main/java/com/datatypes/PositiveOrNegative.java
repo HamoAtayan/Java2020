@@ -12,10 +12,14 @@ public class PositiveOrNegative {
         float a = scanner.nextFloat();
         if (a == 0) {
             System.out.println("zero");
-        } else if (a > 1000000 || a < -1000000) {
-            System.out.println("large");
         } else if (a > 0) {
             System.out.println("the number is positive");
-        } else System.out.println("the number is negative");
+            if (a > 1000000) {
+                System.out.println("large");
+            }
+        } else {
+            System.out.println("the number is negative");
+            System.out.println("small");
+        }
     }
 }

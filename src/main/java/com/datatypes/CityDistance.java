@@ -19,7 +19,7 @@ public class CityDistance {
     }
 
     public static void cityDistance(double cityOneX, double cityOneY, double cityTwoX, double cityTwoY) {
-        d = Math.sqrt(((cityTwoX - cityOneX) * (cityTwoX - cityOneX))) + ((cityTwoY - cityOneY) * (cityTwoY - cityOneY));
+        d = Math.sqrt(Math.pow(cityTwoX + cityOneX, 2)) + ((cityTwoY - cityOneY) * (cityTwoY - cityOneY));
         System.out.println("the lenght is " + d);
     }
 

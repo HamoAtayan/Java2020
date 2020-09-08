@@ -20,7 +20,8 @@ public class BiggestNumber {
         int c = scanner.nextInt();
         if (a > b && a > c) {
             System.out.println("biggest number is: " + a);
+        } else {
+            System.out.println("biggest number is: " + Math.max(b, c));
         }
-        System.out.println("biggest number is: " + Math.max(b, c));
     }
 }

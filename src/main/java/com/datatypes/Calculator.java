@@ -1,7 +1,5 @@
 package com.datatypes;
 
-import com.helpers.CommonHelper;
-
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -36,8 +34,10 @@ public class Calculator {
                 break;
             }
             case '/': {
-                System.out.println(firstNumber / secondNumber);
-                break;
+                if (secondNumber != 0) {
+                    System.out.println(firstNumber / secondNumber);
+                    break;
+                }
             }
             default: {
                 System.out.println("incorrect input, please try again");
